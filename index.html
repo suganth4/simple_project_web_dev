@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript on steroids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\Users\admin\Documents\WEB DEVELOPMENT\BOOTSTRAP\css\bootstrap.min.css" type="text/css">
+</head>
+<body>
+    <div class="container-1">
+       
+    <h2>challenge 1: Your Age in Days</h2>
+    <div class="flex-box-container">
+    <div><input class="btn btn-primary" type="submit" value="click me" onclick="born()"></div>
+    <div><input class="btn btn-danger" type="submit" value="reset" onclick="reset()"></div>
+    </div>
+<div class="flex-box-container">
+    <div id="flex-box-result">
+        
+    </div>
+</div>
+    </div>
+<div class="container-2">
+        <h3>Challenge 2:luffy generater</h3>
+        <input type="submit" value="generate lambogini" id="lambo-generator" class="btn btn-primary" onclick="generate()"> <!--if i click the button,onclick will call the generate function available in javascript file--> 
+    <div class="flex-box-container-1" id="lambo">     
+    </div>
+</div>
+<div class="container-3">
+    <h2>Challenge 3: Rock, Paper, scissors</h2>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+        
+            <img src='C:\Users\admin\Documents\New folder2\rock.webp' id="rock" alt="" height="150px" width="150px" onclick="rpsGame(this)"><!--if i click the image,'this'(this image object) will pass image object as argument-->
+            <img src="C:\Users\admin\Documents\New folder2\paper.jpg" id="paper" alt="" height="150px" width="150px" onclick="rpsGame(this)">
+            <img src="C:\Users\admin\Documents\New folder2\scissor.jpg" id="scissor" alt="" height="150px" width="150px" onclick="rpsGame(this)">
+        
+        </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+</div>
+<div class="container-4">
+    <h2>Challenge 4: Change the color of all button</h2>
+    <div class="flex-box-pick-color">
+        <form action="">
+            <select name="backdrop" id="background" onchange="buttoncolorchange(this)"><!--if we change the option function will call-->
+            <option value="random">random</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="reset">reset</option>
+            </select>
+        </form>
+        <input type="button" class="btn btn-primary" value="weel">
+        <input type="button" class="btn btn-danger" value="Yahoo">
+        <input type="button" class="btn btn-warning" value="Google">
+        <input type="button" class="btn btn-success" value="Facbook">
+    </div>
+</div>
+<div class="container-5">
+    <h2>Challenge 5: Blackjack</h2> 
+    <h3 id="blackjack-result">Let's Play</h3>
+    <div class="flex-box-row-1 ">
+       <div id="Your-Box">
+            <h2>You : <span id="your-blackjack-score">0</span></h2>
+       </div>
+       <div id="Dealer-Box">
+            <h2>Dealer : <span id="dealer-blackjack-score">0</span></h2>
+       </div>     
+    </div>
+    <div class="flex-box-row-2">
+        <div>
+            <input type="button" class="btn btn-primary" value="Hit" id="Blackjack-hit-button">
+            <input type="button" class="btn btn-danger" value="Stand" id="Blackjack-Stand-button">
+             <input type="button" class="btn btn-warning" value="deal" id="Blackjack-deal-button">
+        </div>
+    </div>
+    <div class="flex-box-row-3">
+        <table >
+            <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+            </tr>
+            <tr>
+                <td ><span id="wins">0</span></td>
+                <td ><span id="losses">0</span></td>
+                <td ><span id="draws">0</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <script  src="javascript.js"></script>
+    
+  
+</body>
+</html> 
